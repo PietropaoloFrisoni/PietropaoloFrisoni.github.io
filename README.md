@@ -4,14 +4,15 @@ Welcome to my personal GitHub.io page! I am Pietropaolo Frisoni, a computational
 
 ## About Me
 
-I am a Ph.D. candidate in the Department of Physics and Astronomy at Western University, specializing in the development of new computational methods in loop quantum gravity. My research interests span scientific computing, computer algebra, and the application of advanced computational techniques to problems in theoretical physics.
+I am a Ph.D. candidate in the Department of Physics and Astronomy at Western University, specializing in the development of new computational methods in loop quantum gravity. My research interests span scientific computing and the application of advanced computational techniques to problems in theoretical physics.
 
 ## Website Overview
 
-- **[Personal Website](https://pietropaolofrisoni.github.io/)**: Explore my research, publications, and projects.
-- **[LinkedIn](https://www.linkedin.com/in/pietropaolofrisoni/)**: Connect with me on LinkedIn for professional networking.
-- **[Google Scholar](https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID)**: Check out my academic publications and citations.
+- **[Personal Website](https://pietropaolofrisoni.github.io/)**: Explore my experience, publications, and projects.
+- **[LinkedIn](https://www.linkedin.com/in/pietropaolo-frisoni-757b3b217/)**: Connect with me on LinkedIn for professional networking.
+- **[Inspire](https://inspirehep.net/authors/2122225)**: Check out my academic profile.
 
+<!---
 ## Repository Structure
 
 - **`index.html`**: The main HTML file for the GitHub.io page.
@@ -36,18 +37,16 @@ I am a Ph.D. candidate in the Department of Physics and Astronomy at Western Uni
 
 5. Host your GitHub.io page by enabling GitHub Pages in the repository settings.
 
+--->
+
 ## Contact
 
 Feel free to reach out if you have any questions, collaboration ideas, or if you just want to connect:
 
-- Email: your.email@example.com
-- Twitter: [@YourTwitterHandle](https://twitter.com/YourTwitterHandle)
+- Email: pietropfrisoni@gmail.com
 
 Thank you for visiting my GitHub.io page!
 
+<!---
 ![Your Name](link-to-your-profile-picture.jpg)
-
-
-Massively by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+--->
