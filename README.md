@@ -1,7 +1,3 @@
-Massively by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-
 # Pietropaolo Frisoni - Computational Scientist
 
 Welcome to my personal GitHub.io page! I am Pietropaolo Frisoni, a computational scientist passionate about exploring the intersections of physics, mathematics, and computer science. This repository serves as the source code for my personal website hosted on GitHub Pages.
@@ -50,3 +46,8 @@ Feel free to reach out if you have any questions, collaboration ideas, or if you
 Thank you for visiting my GitHub.io page!
 
 ![Your Name](link-to-your-profile-picture.jpg)
+
+
+Massively by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
