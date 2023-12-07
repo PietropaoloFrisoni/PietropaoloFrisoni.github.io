@@ -9,7 +9,7 @@ I am a Ph.D. candidate in the Department of Physics and Astronomy at Western Uni
 ## Website Overview
 
 - **[Personal Website](https://pietropaolofrisoni.github.io/)**: Explore my experience, publications, and projects.
-- **[LinkedIn](https://www.linkedin.com/in/pietropaolo-frisoni-757b3b217/)**: Connect with me on LinkedIn for professional networking.
+- **[LinkedIn](https://www.linkedin.com/in/pietropaolo-frisoni-ph-d-757b3b217/)**: Connect with me on LinkedIn for professional networking.
 - **[Inspire](https://inspirehep.net/authors/2122225)**: Check out my academic profile.
 
 <!---
