@@ -4,7 +4,7 @@ Welcome to my personal GitHub.io page! I am Pietropaolo Frisoni, a computational
 
 ## About Me
 
-I recently obtained a Ph.D. in Physics and Astronomy at Western University with a Scientific Computing collaborative specialization, developing new computational methods in loop quantum gravity. My research interests span scientific computing and the application of advanced computational techniques to problems in theoretical physics.
+I recently obtained a Ph.D. in Physics at Western University with a Scientific Computing collaborative specialization, developing new computational methods in loop quantum gravity. My research interests span scientific computing and the application of advanced computational techniques to problems in theoretical physics.
 
 ## Website Overview
 
