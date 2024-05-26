@@ -1,17 +1,18 @@
 # Pietropaolo Frisoni - Computational Scientist
 
-Welcome to my personal GitHub.io page! I am Pietropaolo Frisoni, a computational scientist passionate about exploring the intersections of physics, mathematics, and computer science. This repository serves as the source code for my personal website hosted on GitHub Pages.
+Welcome to my personal GitHub.io page! I am Pietropaolo Frisoni, a computational scientist passionate about exploring the intersections of physics, mathematics, and computer science.
 
 ## About Me
 
 I currently work as a Quantum Software Developer II at Xanadu Quantum Technologies (Toronto, Canada).
-I recently obtained a Ph.D. in Physics at Western University with a Scientific Computing collaborative specialization, developing new computational methods in loop quantum gravity. My research interests span scientific computing and the application of advanced computational techniques to problems in theoretical physics.
+I recently obtained a Ph.D. in Physics at Western University with a Scientific Computing collaborative specialization, developing new computational methods in loop quantum gravity. My interests span scientific computing and the application of computational techniques to problems in physics and mathematics. 
+When not working on those, I can usually be found playing the guitar.
 
 ## Website Overview
 
-- **[Personal Website](https://pietropaolofrisoni.github.io/)**: Explore my experience, publications, and projects.
-- **[LinkedIn](https://www.linkedin.com/in/pietropaolo-frisoni-ph-d-757b3b217/)**: Connect with me on LinkedIn for professional networking.
-- **[Inspire](https://inspirehep.net/authors/2122225)**: Check out my academic profile.
+- **[Personal Website](https://pietropaolofrisoni.github.io/)**: My experience, publications, and projects.
+- **[LinkedIn](https://www.linkedin.com/in/pietropaolo-frisoni-ph-d-757b3b217/)**: LinkedIn for professional networking.
+- **[Inspire](https://inspirehep.net/authors/2122225)**: My academic profile.
 
 <!---
 ## Repository Structure
