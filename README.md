@@ -11,7 +11,7 @@ When not working on those, I can usually be found playing the guitar.
 ## Website Overview
 
 - **[Personal Website](https://pietropaolofrisoni.github.io/)**: My experience, publications, and projects.
-- **[LinkedIn](https://www.linkedin.com/in/pietropaolo-frisoni-ph-d-757b3b217/)**: LinkedIn for professional networking.
+- **[LinkedIn](https://www.linkedin.com/in/pietropaolo-frisoni-757b3b217/)**: LinkedIn for professional networking.
 - **[Inspire](https://inspirehep.net/authors/2122225)**: My academic profile.
 
 <!---
