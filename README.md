@@ -8,7 +8,7 @@ I am Pietropaolo Frisoni, a computational scientist passionate about exploring t
 
 - **[Personal Website](https://pietropaolofrisoni.github.io/)**: My experience, publications, and projects.
 - **[LinkedIn](https://www.linkedin.com/in/pietropaolo-frisoni-757b3b217/)**: LinkedIn for professional networking.
-- **[Inspire](https://inspirehep.net/authors/2122225)**: My academic profile (which I currently do not use that much)
+- **[Inspire](https://inspirehep.net/authors/2122225)**: My academic profile (which I currently do not use that much).
 
 ## Contact
 
