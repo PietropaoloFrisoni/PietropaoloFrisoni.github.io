@@ -1,0 +1,5 @@
+				<ul class="{{ include.classes }}">
+{%- for s in site.social %}
+					<li><a href="{{ s.url }}" class="icon {{ s.icon }}"><span class="label">{{ s.name }}</span></a></li>
+{%- endfor %}
+				</ul>

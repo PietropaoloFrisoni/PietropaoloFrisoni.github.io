@@ -1,0 +1,15 @@
+# Jekyll build output (GitHub Pages builds this on its own)
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# Local Ruby setup, if you ever run Jekyll locally
+Gemfile.lock
+.bundle/
+vendor/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp

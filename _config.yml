@@ -1,0 +1,59 @@
+# Site-wide settings. GitHub Pages builds this automatically on push --
+# there is no local build step and no dependencies to install.
+
+title: Pietropaolo Frisoni
+author: Pietropaolo Frisoni
+description: >-
+  Personal website of Pietropaolo Frisoni, a computational scientist with a PhD
+  in Physics and Scientific Computing, working in quantum computing and HPC.
+url: https://pietropaolofrisoni.github.io
+baseurl: ""
+lang: en
+
+# Shown when a page is shared on LinkedIn, Slack, etc.
+og_image: /images/LifeRoad.jpg
+
+# The main navigation. `id` is matched against each page's `nav_id` front
+# matter to mark the current item.
+nav:
+  - id: about
+    title: About Me
+    url: /
+  - id: education
+    title: Education
+    url: /education.html
+  - id: experience
+    title: Experience
+    url: /experience.html
+  - id: projects
+    title: Projects
+    url: /projects.html
+  - id: publications
+    title: Publications
+    url: /publications.html
+
+# Rendered in both the nav and the footer.
+social:
+  - name: LinkedIn
+    url: https://www.linkedin.com/in/pietropaolo-frisoni-757b3b217/
+    icon: brands fa-linkedin-in
+  - name: GitHub
+    url: https://github.com/PietropaoloFrisoni
+    icon: brands fa-github
+  - name: INSPIRE-HEP
+    url: https://inspirehep.net/authors/2122225
+    icon: solid fa-graduation-cap
+  - name: Facebook
+    url: https://www.facebook.com/pietropaolo.frisusfrisoni/
+    icon: brands fa-facebook
+
+copyright_quote: >-
+  "What we know is a drop, what we don't know is an ocean" - Isaac Newton
+
+# Sass sources are kept in the repo for reference but are not part of the
+# built site; main.css has been hand-edited and is the real source.
+exclude:
+  - assets/sass
+  - README.md
+  - LICENSE.txt
+  - .claude
