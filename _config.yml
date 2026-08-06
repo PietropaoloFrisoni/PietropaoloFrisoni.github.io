@@ -43,17 +43,15 @@ social:
   - name: INSPIRE-HEP
     url: https://inspirehep.net/authors/2122225
     icon: solid fa-graduation-cap
-  - name: Facebook
-    url: https://www.facebook.com/pietropaolo.frisusfrisoni/
-    icon: brands fa-facebook
 
-copyright_quote: >-
+# The quote in the small bar at the very bottom of every page, next to the
+# name. Delete this line and the matching one in _includes/copyright.html to
+# drop it entirely.
+footer_quote: >-
   "What we know is a drop, what we don't know is an ocean" - Isaac Newton
 
-# Sass sources are kept in the repo for reference but are not part of the
-# built site; main.css has been hand-edited and is the real source.
 exclude:
-  - assets/sass
   - README.md
+  - MAINTAINING.md
   - LICENSE.txt
   - .claude
