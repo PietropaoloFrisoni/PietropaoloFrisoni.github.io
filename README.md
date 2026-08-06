@@ -4,6 +4,8 @@ Welcome to my personal GitHub.io page.
 
 I am Pietropaolo Frisoni, a computational scientist passionate about exploring the intersections of physics, mathematics, and computer science. When not working on those, I can usually be found playing the guitar.
 
+I currently work as an Advanced Quantum Software Engineer at [IQM Quantum Computers](https://www.meetiqm.com/) in Munich, where I am a core contributor to [Qrisp](https://qrisp.eu/), an open-source high-level framework for writing and compiling quantum algorithms.
+
 ## Website Overview
 
 - **[Personal Website](https://pietropaolofrisoni.github.io/)**: My experience, publications, and projects.
