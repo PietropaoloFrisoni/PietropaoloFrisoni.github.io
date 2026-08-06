@@ -4,12 +4,23 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 
 <head>
-	<title>Pietropaolo Frisoni - CV</title>
+	<title>Pietropaolo Frisoni - Experience</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Work experience, conference talks, and volunteering of Pietropaolo Frisoni, Advanced Quantum Software Engineer at IQM Quantum Computers." />
+	<meta name="author" content="Pietropaolo Frisoni" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Pietropaolo Frisoni" />
+	<meta property="og:title" content="Pietropaolo Frisoni - Experience" />
+	<meta property="og:description" content="Work experience, conference talks, and volunteering of Pietropaolo Frisoni, Advanced Quantum Software Engineer at IQM Quantum Computers." />
+	<meta property="og:url" content="https://pietropaolofrisoni.github.io/experience.html" />
+	<meta property="og:image" content="https://pietropaolofrisoni.github.io/images/LifeRoad.jpg" />
+	<meta name="twitter:card" content="summary" />
+	<link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+	<link rel="canonical" href="https://pietropaolofrisoni.github.io/experience.html" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
@@ -37,11 +48,12 @@
 				<li><a href="publications.html">Publications</a></li>
 			</ul>
 			<ul class="icons">
-				<!--TODO: add links to ORCID (and/or INSPIRE and/or Google scholar and/or Research gate) and FACEBOOK-->
 				<li><a href="https://www.linkedin.com/in/pietropaolo-frisoni-757b3b217/"
 						class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 				<li><a href="https://github.com/PietropaoloFrisoni" class="icon brands fa-github"><span
 							class="label">GitHub</span></a></li>
+				<li><a href="https://inspirehep.net/authors/2122225"
+						class="icon solid fa-graduation-cap"><span class="label">INSPIRE-HEP</span></a></li>
 				<li><a href="https://www.facebook.com/pietropaolo.frisusfrisoni/" class="icon brands fa-facebook"><span
 							class="label">Facebook</span></a></li>
 			</ul>
@@ -57,137 +69,139 @@
 						<h2>Work Experience</h2>
 						<ul>
 							<li>
-								<h3>Advanced Quantum Software Engineer </br> IQM Quantum Computers, Munich, Germany
+								<h3>Advanced Quantum Software Engineer <br /> IQM Quantum Computers, Munich, Germany
 									<i>(Oct 2025 - present)</i>
 								</h3>
+								<ul>
+									<li>
+										<p>Designed the end-to-end backend pipeline for compiling and submitting
+											quantum circuits to IQM's quantum hardware. Leading the architectural
+											design of several <a href="https://qrisp.eu/index.html" target="_blank">
+												Qrisp</a> new features.</p>
+									</li>
+									<li>
+										<p>Wrote roadmaps, ADRs, and contributing guidelines. Coordinated
+											refactoring projects across 10+ developers to enforce optimal design
+											patterns and code quality standards across the Qrisp codebase.</p>
+									</li>
+									<li>
+										<p>Implemented core features and algorithms in Qrisp — particularly in
+											<a href="https://docs.jax.dev/en/latest/jit-compilation.html"
+												target="_blank">Just-in-Time (JIT) compilation mode with JAX</a>.
+										</p>
+									</li>
+									<li>
+										<p>Core contributor to <a href="https://qrisp.eu/index.html"
+												target="_blank">Qrisp</a>, IQM's adopted open-source high-level Python
+											framework for writing and compiling quantum circuits.</p>
+									</li>
+								</ul>
 							</li>
-							<ul>
-								<li>
-									<p>Designed the end-to-end backend pipeline for compiling and submitting
-										quantum circuits to IQM's quantum hardware. Leading the architectural
-										design of several <a href="https://qrisp.eu/index.html" target="_blank">
-											Qrisp</a> new features.</p>
-								</li>
-								<li>
-									<p>Wrote roadmaps, ADRs, and contributing guidelines. Coordinated
-										refactoring projects across 10+ developers to enforce optimal design
-										patterns and code quality standards across the Qrisp codebase.</p>
-								</li>
-								<li>
-									<p>Implemented core features and algorithms in Qrisp — particularly in
-										<a href="https://docs.jax.dev/en/latest/jit-compilation.html"
-											target="_blank">Just-in-Time (JIT) compilation mode with JAX</a>.
-									</p>
-								</li>
-								<li>
-									<p>Core contributor to <a href="https://qrisp.eu/index.html"
-											target="_blank">Qrisp</a>, IQM's adopted open-source high-level Python
-										framework for writing and compiling quantum circuits.</p>
-								</li>
-							</ul>
 
 							<li>
-								<h3>Quantum Software Developer II </br> Xanadu Quantum Technologies, Toronto, ON, Canada
+								<h3>Quantum Software Developer II <br /> Xanadu Quantum Technologies, Toronto, ON, Canada
 									<i>(Feb 2024 - Oct 2025)</i>
 								</h3>
+								<ul>
+									<li>
+										<p>Contributed to a multi-year effort to capture the entire
+											<a href="https://pennylane.ai/" target="_blank">PennyLane</a> workflow
+											into the <a href="https://jax.readthedocs.io/en/latest/" target="_blank">JAX</a>
+											computational graph for JIT quantum compilation,
+											accelerating quantum machine learning pipelines. Prototyped a Python
+											compiler based on MLIR to apply quantum transforms as compilation
+											passes.
+										</p>
+									</li>
+									<li>
+										<p>Developed <a
+												href="https://docs.pennylane.ai/en/stable/code/api/pennylane.devices.default_tensor.DefaultTensor.html"
+												target="_blank">DefaultTensor</a>, a PennyLane quantum device based on
+											tensor network simulations, enabling the simulation of quantum circuits
+											with thousands of gates. The <a
+												href="https://pennylane.ai/qml/demos/tutorial_How_to_simulate_quantum_circuits_with_tensor_networks/"
+												target="_blank">public tutorial</a> is available on the PennyLane
+											website.</p>
+									</li>
+									<li>
+										<p>Core team release manager for <a
+												href="https://github.com/PennyLaneAI/pennylane/releases/tag/v0.41.0"
+												target="_blank">PennyLane 0.41</a> and <a
+												href="https://github.com/PennyLaneAI/pennylane/releases/tag/v0.40.0"
+												target="_blank">PennyLane 0.40</a>, and several PennyLane plugins.
+											Mentored Ph.D. residents during onboarding. Wrote documentation,
+											tutorials, and guides for users.</p>
+									</li>
+									<li>
+										<p>Core contributor (300+ commits) to <a href="https://pennylane.ai/"
+												target="_blank">PennyLane</a>, a leading open-source Python/C++ framework
+											for quantum machine learning with 3000+ GitHub stars and 800+ forks.</p>
+									</li>
+								</ul>
 							</li>
-							<ul>
-								<li>
-									<p>Contributed to a multi-year effort to capture the entire
-										<a href="https://pennylane.ai/" target="_blank">PennyLane</a> workflow
-										into the <a href="https://jax.readthedocs.io/en/latest/" target="_blank">JAX</a>
-										computational graph for JIT quantum compilation,
-										accelerating quantum machine learning pipelines. Prototyped a Python
-										compiler based on MLIR to apply quantum transforms as compilation
-										passes.
-									</p>
-								</li>
-								<li>
-									<p>Developed <a
-											href="https://docs.pennylane.ai/en/stable/code/api/pennylane.devices.default_tensor.DefaultTensor.html"
-											target="_blank">DefaultTensor</a>, a PennyLane quantum device based on
-										tensor network simulations, enabling the simulation of quantum circuits
-										with thousands of gates. The <a
-											href="https://pennylane.ai/qml/demos/tutorial_How_to_simulate_quantum_circuits_with_tensor_networks/"
-											target="_blank">public tutorial</a> is available on the PennyLane
-										website.</p>
-								</li>
-								<li>
-									<p>Core team release manager for <a
-											href="https://github.com/PennyLaneAI/pennylane/releases/tag/v0.41.0"
-											target="_blank">PennyLane 0.41</a> and <a
-											href="https://github.com/PennyLaneAI/pennylane/releases/tag/v0.40.0"
-											target="_blank">PennyLane 0.40</a>, and several PennyLane plugins.
-										Mentored Ph.D. residents during onboarding. Wrote documentation,
-										tutorials, and guides for users.</p>
-								</li>
-								<li>
-									<p>Core contributor (300+ commits) to <a href="https://pennylane.ai/"
-											target="_blank">PennyLane</a>, a leading open-source Python/C++ framework
-										for quantum machine learning with 3000+ GitHub stars and 800+ forks.</p>
-								</li>
-							</ul>
 							<li>
-								<h3>Scientific translator </br> Giangiacomo Feltrinelli Editore, Milano, Italy <i>(Jan
+								<h3>Scientific translator <br /> Giangiacomo Feltrinelli Editore, Milano, Italy <i>(Jan
 										2025 - Jul
 										2025)</i></h3>
+								<ul>
+									<li>
+										<p>Adapter and Italian translator for <a
+												href="https://www.amazon.it/Covariant-Loop-Quantum-Gravity-Introduction/dp/1107069629"
+												target="_blank">Covariant Loop Quantum Gravity:
+												An Elementary Introduction to Quantum Gravity and Spinfoam Theory</a>,
+											written by <em>Carlo
+												Rovelli</em> and <em>Francesca Vidotto</em>. The Italian version is <a
+												href="https://www.amazon.it/Gravit%C3%A0-quantistica-loop-Carlo-Rovelli/dp/8850339364/ref=sr_1_3?dib=eyJ2IjoiMSJ9.zUwkwjq4Prc8993fOjNr2Wa8NHsxSwhN6wkAMyGPbb0.tkHuFvafyn_Ek65QSftxKACTzhWXoH6yfTtTS1Qsv7I&dib_tag=se&qid=1773162160&refinements=p_27%3ACarlo+Rovelli%3BFrancesca+Vidotto&s=books&sr=1-3"
+												target="_blank">Gravità quantistica a loop.</a> </p>
+									</li>
+								</ul>
 							</li>
-							<ul>
-								<li>
-									<p>Adapter and Italian translator for <a
-											href="https://www.amazon.it/Covariant-Loop-Quantum-Gravity-Introduction/dp/1107069629"
-											target="_blank">Covariant Loop Quantum Gravity:
-											An Elementary Introduction to Quantum Gravity and Spinfoam Theory</a>,
-										written by <em>Carlo
-											Rovelli</em> and <em>Francesca Vidotto</em>. The Italian version is <a
-											href="https://www.amazon.it/Gravit%C3%A0-quantistica-loop-Carlo-Rovelli/dp/8850339364/ref=sr_1_3?dib=eyJ2IjoiMSJ9.zUwkwjq4Prc8993fOjNr2Wa8NHsxSwhN6wkAMyGPbb0.tkHuFvafyn_Ek65QSftxKACTzhWXoH6yfTtTS1Qsv7I&dib_tag=se&qid=1773162160&refinements=p_27%3ACarlo+Rovelli%3BFrancesca+Vidotto&s=books&sr=1-3"
-											target="_blank">Gravità quantistica a loop.</a> </p>
-								</li>
-							</ul>
 							<li>
-								<h3>Researcher and Teaching assistant </br> Western University, London, ON, Canada
+								<h3>Researcher and Teaching assistant <br /> Western University, London, ON, Canada
 									<i>(Sep 2020 - Dec 2023)</i>
 								</h3>
+								<ul>
+									<li>
+										<p>Conducted scientific research with the backing of the Natural Science and
+											Engineering Council of Canada. </p>
+									</li>
+									<li>
+										<p>Integrated high-performance computing into loop quantum gravity
+											research. Published original contributions in peer-reviewed journals, also as a
+											first and solo author. </p>
+									</li>
+									<li>
+										<p>Teaching assistant for engineering students in Calculus I, Calculus II, and
+											Numerical Methods courses. </p>
+									</li>
+								</ul>
 							</li>
-							<ul>
-								<li>
-									<p>Conducted scientific research with the backing of the Natural Science and
-										Engineering Council of Canada. </p>
-								</li>
-								<li>
-									<p>Integrated high-performance computing into loop quantum gravity
-										research. Published original contributions in peer-reviewed journals, also as a
-										first and solo author. </p>
-								</li>
-								<li>
-									<p>Teaching assistant for engineering students in Calculus I, Calculus II, and
-										Numerical Methods courses. </p>
-								</li>
-							</ul>
 							<li>
-								<h3>Scientific translator </br> Adelphi Edizioni, Milano, Italy <i>(Jun 2020 - Feb
+								<h3>Scientific translator <br /> Adelphi Edizioni, Milano, Italy <i>(Jun 2020 - Feb
 										2021)</i></h3>
+								<ul>
+									<li>
+										<p>Adapter and Italian translator for <a
+												href="https://www.amazon.ca/General-Relativity-Essentials-Carlo-Rovelli/dp/1009013696"
+												target="_blank">General Relativity: The Essentials</a>, written by <em>Carlo
+												Rovelli.</em> The Italian version is <a
+												href="https://www.amazon.ca/Relativit%C3%A0-introduzione-concettuale-gravitazionali-quantistica/dp/8845936082/ref=cm_cr_arp_d_product_top?ie=UTF8"
+												target="_blank">Relatività generale. Una semplice introduzione.</a> </p>
+									</li>
+								</ul>
 							</li>
-							<ul>
-								<li>
-									<p>Adapter and Italian translator for <a
-											href="https://www.amazon.ca/General-Relativity-Essentials-Carlo-Rovelli/dp/1009013696"
-											target="_blank">General Relativity: The Essentials</a>, written by <em>Carlo
-											Rovelli.</em> The Italian version is <a
-											href="https://www.amazon.ca/Relativit%C3%A0-introduzione-concettuale-gravitazionali-quantistica/dp/8845936082/ref=cm_cr_arp_d_product_top?ie=UTF8"
-											target="_blank">Relatività generale. Una semplice introduzione.</a> </p>
-								</li>
-							</ul>
 							<li>
-								<h3>Lifeguard </br> New Kalos, Rimini, Italy <i>(Jun 2012 - Aug 2012)</i></h3>
+								<h3>Lifeguard <br /> New Kalos, Rimini, Italy <i>(Jun 2012 - Aug 2012)</i></h3>
+								<ul>
+									<li>
+										<p>Lifeguard in a swimming pool during summertime in Rimini, Italy. Seasonal work
+											during the formative years. </p>
+									</li>
+								</ul>
 							</li>
-							<ul>
-								<li>
-									<p>Lifeguard in a swimming pool during summertime in Rimini, Italy. Seasonal work
-										during the formative years. </p>
-								</li>
-							</ul>
 						</ul>
+					</div>
+				</div>
 			</section>
 			<section class="post">
 				<h2>Conference Talks</h2>
@@ -235,26 +249,22 @@
 				</ul>
 
 			</section>
-			</section>
 
 
 			<!-- Footer -->
 			<footer>
-				<center>
-
-					<section>
-						<h3></h3>
-						<ul class="icons alt">
-							<li><a href="https://www.linkedin.com/in/pietropaolo-frisoni-757b3b217/"
-									class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/PietropaoloFrisoni" class="icon brands fa-github"><span
-										class="label">GitHub</span></a></li>
-							<li><a href="https://www.facebook.com/pietropaolo.frisusfrisoni/"
-									class="icon brands fa-facebook"><span class="label">Facebook</span></a></li>
-						</ul>
-
-					</section>
-				</center>
+				<section class="align-center">
+					<ul class="icons alt">
+						<li><a href="https://www.linkedin.com/in/pietropaolo-frisoni-757b3b217/"
+								class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/PietropaoloFrisoni" class="icon brands fa-github"><span
+									class="label">GitHub</span></a></li>
+						<li><a href="https://inspirehep.net/authors/2122225" class="icon solid fa-graduation-cap"><span
+									class="label">INSPIRE-HEP</span></a></li>
+						<li><a href="https://www.facebook.com/pietropaolo.frisusfrisoni/"
+								class="icon brands fa-facebook"><span class="label">Facebook</span></a></li>
+					</ul>
+				</section>
 			</footer>
 
 		</div>
