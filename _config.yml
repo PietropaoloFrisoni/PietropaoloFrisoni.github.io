@@ -25,9 +25,9 @@ nav:
   - id: experience
     title: Experience
     url: /experience.html
-  - id: projects
-    title: Projects
-    url: /projects.html
+  - id: teaching
+    title: Teaching & Outreach
+    url: /teaching.html
   - id: publications
     title: Publications
     url: /publications.html
@@ -52,6 +52,6 @@ footer_quote: >-
 
 exclude:
   - README.md
-  - MAINTAINING.md
   - LICENSE.txt
   - .claude
+  - .prettierignore

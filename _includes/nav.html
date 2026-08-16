@@ -1,7 +1,7 @@
 		<nav id="nav">
 			<ul class="links">
 {%- for item in site.nav %}
-				<li{% if page.nav_id == item.id %} class="active"{% endif %}><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+				<li{% if page.nav_id == item.id %} class="active"{% endif %}><a href="{{ item.url | relative_url }}">{{ item.title | escape }}</a></li>
 {%- endfor %}
 			</ul>
 {% include social.html classes="icons" %}

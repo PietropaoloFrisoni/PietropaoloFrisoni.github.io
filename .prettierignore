@@ -1,0 +1,14 @@
+# These are Liquid templates, not HTML. Formatters reflow them as if they were
+# plain markup and silently break the template logic -- e.g. rewriting
+# `{% if a == b %}` to `{% if a==b %}`, which Liquid parses as one variable
+# name rather than a comparison, so the condition is always false.
+_includes/
+_layouts/
+_config.yml
+
+# Jekyll build output
+_site/
+
+# Vendored third-party assets
+assets/js/
+assets/css/
