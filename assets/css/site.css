@@ -376,7 +376,15 @@ a:hover { color: var(--quant); }
 
 .about { display: grid; grid-template-columns: clamp(300px, 24vw, 420px) minmax(0, 860px); gap: 72px; align-items: center; margin-top: 56px; }
 .about-photo { display: block; width: 100%; height: auto; aspect-ratio: 546 / 640; object-fit: cover; border-radius: 24px; }
-.about-text p { margin: 16px 0 0; font-size: 18px; line-height: 1.65; color: var(--muted); }
+/* Beside the photo, the text grows with the screen and spans the photo's full height, top edge to bottom edge. */
+.about-text {
+	align-self: stretch;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-size: clamp(18px, calc(.54vw + 11.2px), 23px);
+}
+.about-text p { margin: .8em 0 0; font-size: inherit; line-height: 1.6; color: var(--muted); }
 .about-text p:first-child { margin-top: 0; color: var(--text); }
 
 /* ---------- Timeline (Experience, Education) ---------- */
@@ -581,6 +589,7 @@ a.row-title { text-decoration: none; }
 	.grid-3, .about { grid-template-columns: minmax(0, 1fr); }
 	.about { gap: 40px; }
 	.about-photo { max-width: 320px; }
+	.about-text { display: block; font-size: 18px; }
 	.grid-cert { grid-template-columns: minmax(0, 1fr); }
 }
 
