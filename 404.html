@@ -1,16 +1,24 @@
 ---
-layout: 'default'
-title: 'Pietropaolo Frisoni - Page not found'
-description: 'The requested page could not be found.'
-quote: '"The important thing is not to stop questioning" - A. Einstein'
-permalink: '/404.html'
+layout: default
+title: Page not found · Pietropaolo Frisoni
+description: The requested page could not be found.
+permalink: /404.html
 noindex: true
 ---
+<header class="topbar">
+	{% include nav.html %}
+</header>
 
-			<section class="post">
-				<h2>404 &mdash; page not found</h2>
-				<p>This page does not exist, or it has moved. Try one of the sections above, or head back to the
-					<a href="/index.html">home page</a>.
-				</p>
-			</section>
-
+<main id="main" class="wrap notfound">
+	<p class="section-num">404</p>
+	<h1 class="section-title">This page doesn't exist</h1>
+	<p class="notfound-text">It may have moved when the site was redesigned: everything now lives on the home page.</p>
+	<figure class="quote notfound-quote">
+		<span class="quote-mark" aria-hidden="true">“</span>
+		<blockquote>The important thing is not to stop questioning</blockquote>
+		<figcaption>Albert Einstein</figcaption>
+	</figure>
+	<div class="actions">
+		<a class="btn btn-primary" href="{{ '/' | relative_url }}">Back to the home page</a>
+	</div>
+</main>

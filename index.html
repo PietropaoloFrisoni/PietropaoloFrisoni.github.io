@@ -1,31 +1,518 @@
 ---
-layout: 'default'
-title: 'Pietropaolo Frisoni'
-description: 'Personal website of Pietropaolo Frisoni, a computational scientist with a PhD in Physics and Scientific Computing, working in quantum computing and HPC.'
-quote: '"I was born not knowing and have had only a little time to change that here and there" - R. Feynman'
-nav_id: 'about'
-permalink: '/'
-intro: true
+layout: default
+title: Pietropaolo Frisoni
+permalink: /
+hero: true
 ---
-			<!-- Featured Post -->
-			<div class="image-txt-container">
-				<img src="images/LifeRoad.jpg" width="360" height="422"
-					alt="Pietropaolo Frisoni standing on a road stretching towards the horizon" />
-				<article class="post featured">
+<header class="hero">
+	<canvas class="hero-canvas" aria-hidden="true"></canvas>
+	{% include nav.html %}
 
-					<div class="align-center">
-						<h2>
-							Thank you for visiting my page
-						</h2>
-						<h3>I am a Computational Scientist who:</h3>
-					</div>
-					<ul>
-						<li>💡 is passionate about addressing challenging and fascinating problems </li>
-						<li>💻 currently works in the field of quantum computing and HPC </li>
-						<li>🌎 believes in the power of international and open-source collaborations </li>
-						<li>🎸 loves to think about problems while playing the guitar </li>
-						<li>📖 aims, as the purpose of this life, to <b>expand human knowledge</b></li>
-					</ul>
-				</article>
+	<div class="hero-body wrap">
+		<div class="hero-text">
+			<div class="identity rise">
+				<img class="avatar av-0" src="{{ '/images/profile-code.jpg' | relative_url }}" alt="Portrait of Pietropaolo Frisoni" width="112" height="112">
+				<div>
+					<p class="eyebrow identity-eyebrow">Computational scientist · PhD in Physics</p>
+					<h1 class="hero-name">Pietropaolo Frisoni</h1>
+				</div>
 			</div>
+			<p class="hero-intro rise" style="--d: 120ms">I enjoy working where three fields meet:</p>
+			<div class="lenses rise" role="group" aria-label="Fields" style="--d: 240ms">
+				<button type="button" class="lens-btn lens-phys is-on" aria-pressed="true"><span class="lens-num">01</span><span class="lens-dot"></span><span class="lens-label">Theoretical physics</span></button>
+				<button type="button" class="lens-btn lens-hpc" aria-pressed="false"><span class="lens-num">02</span><span class="lens-dot"></span><span class="lens-label">High-performance computing</span></button>
+				<button type="button" class="lens-btn lens-quant" aria-pressed="false"><span class="lens-num">03</span><span class="lens-dot"></span><span class="lens-label">Quantum computing</span></button>
+			</div>
+			<div class="lens-caption rise" style="--d: 320ms">
+				<p class="fade" data-lens="0">Curved spacetime: two black holes spiral around each other and send out gravitational waves.</p>
+				<p class="fade" data-lens="1" hidden>Thousands of cores on one problem: racks of compute nodes trading data over a high-speed network, the machinery behind large simulations.</p>
+				<p class="fade" data-lens="2" hidden>The quantum Fourier transform, the heart of Shor's algorithm.</p>
+			</div>
+			<div class="actions rise" style="--d: 400ms">
+				<a class="btn btn-primary" href="#publications">Publications</a>
+				<a class="btn" href="#experience">Experience</a>
+			</div>
+		</div>
+	</div>
 
+	<div class="hero-foot wrap">
+		<span class="hero-hint">Select a field to change the scene</span>
+		<button type="button" class="icon-btn" data-pause data-paused="false" aria-label="Pause background animation">
+			<svg class="icon-pause" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"></rect><rect x="14" y="5" width="4" height="14" rx="1"></rect></svg>
+			<svg class="icon-play" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.9l10-6.5a1 1 0 0 0 0-1.7l-10-6.5A1 1 0 0 0 8 5.5z"></path></svg>
+		</button>
+	</div>
+</header>
+
+<main id="main">
+
+	<!-- 01 About -->
+	<section class="section wrap" id="about">
+		<div class="section-head">
+			<div>
+				<p class="section-num">01</p>
+				<h2 class="section-title">A love for science</h2>
+			</div>
+			<figure class="quote">
+				<span class="quote-mark" aria-hidden="true">“</span>
+				<blockquote>I was born not knowing and have had only a little time to change that here and there</blockquote>
+				<figcaption>Richard Feynman</figcaption>
+			</figure>
+		</div>
+		<div class="about">
+			<img class="about-photo reveal" src="{{ '/images/LifeRoad.jpg' | relative_url }}" alt="Pietropaolo Frisoni standing on a road stretching towards the horizon" width="546" height="640" loading="lazy">
+			<div class="about-text reveal">
+				<p>I'm a computational scientist with a PhD in Physics and Scientific Computing. I enjoy working at the intersection of mathematics, physics, and computer science.</p>
+				<p>My journey began in theoretical physics, where I worked on quantum gravity and discovered that some of its most challenging open questions were fundamentally computational.</p>
+				<p>Tackling them leads naturally to high-performance computing and, from there, to quantum computing, where the challenge today is making quantum computers programmable and accessible.</p>
+				<p>Along the way, I've had the opportunity to live, study, and work in different countries, collaborating with people from all over the world.</p>
+				<p>You'll usually find me playing the guitar, a passion I've had since I was ten.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- 02 Experience -->
+	<section class="section wrap" id="experience">
+		<div class="section-head">
+			<div>
+				<p class="section-num">02</p>
+				<h2 class="section-title">Experience</h2>
+			</div>
+			<figure class="quote">
+				<span class="quote-mark" aria-hidden="true">“</span>
+				<blockquote>Try not to become a man of success, but rather try to become a man of value</blockquote>
+				<figcaption>Albert Einstein</figcaption>
+			</figure>
+		</div>
+
+		<h3 class="sub">Work experience</h3>
+		<ol class="tl">
+			<li class="tl-item reveal">
+				<div class="tl-when"><p class="tl-date">Oct 2025 – present</p></div>
+				<div class="tl-rail"><span class="tl-dot dot-quant is-filled"></span></div>
+				<div class="tl-body prose">
+					<h4 class="tl-title">Advanced Quantum Software Engineer</h4>
+					<p class="tl-org">IQM Quantum Computers</p>
+					<div class="tags"><span class="tag tag-quantum">Quantum</span><span class="tag tag-hpc">HPC</span></div>
+					<ul class="bullets">
+						<li>Core contributor to <a href="https://qrisp.eu/index.html" target="_blank" rel="noopener noreferrer">Qrisp</a>, IQM's adopted open-source high-level Python framework for writing and compiling quantum circuits. Implemented core features and algorithms, especially in Just-in-Time (JIT) compilation mode with <a href="https://docs.jax.dev/en/latest/jit-compilation.html" target="_blank" rel="noopener noreferrer">JAX</a> and <a href="https://mlir.llvm.org/" target="_blank" rel="noopener noreferrer">MLIR</a>.</li>
+						<li>Designed the end-to-end backend <a href="https://qrisp.eu/reference/Backend%20Interface/index.html" target="_blank" rel="noopener noreferrer">interface</a> for compiling and submitting quantum circuits to IQM's quantum hardware.</li>
+						<li>Wrote roadmaps, ADRs, and contributing guidelines. Coordinated refactoring projects across 10+ developers to enforce optimal design patterns and code quality standards across the Qrisp codebase.</li>
+						<li>Presented workshops, tutorials and scientific posters at several conferences, such as <a href="https://qce.quantum.ieee.org/2026/" target="_blank" rel="noopener noreferrer">IEEE Quantum Week 2026</a> and the <a href="https://www.fokus.fraunhofer.de/en/sqc/events/eclipse_qrisp_community_day.html" target="_blank" rel="noopener noreferrer">Eclipse Qrisp Community Day</a> at the <a href="https://www.fokus.fraunhofer.de/en.html" target="_blank" rel="noopener noreferrer">Fraunhofer FOKUS</a> institute.</li>
+						<li>Authored several tutorials and demos on the <a href="https://www.iqmacademy.com/" target="_blank" rel="noopener noreferrer">IQM Academy</a> and in the <a href="https://qrisp.eu/general/tutorial/index.html" target="_blank" rel="noopener noreferrer">Qrisp documentation</a>, listed under <a href="#teaching">Teaching &amp; Outreach</a>.</li>
+						<li>Authored multiple papers published in peer-reviewed journals, listed under <a href="#publications">Publications</a>.</li>
+					</ul>
+				</div>
+			</li>
+			<li class="tl-item reveal">
+				<div class="tl-when"><p class="tl-date">Feb 2024 – Oct 2025</p></div>
+				<div class="tl-rail"><span class="tl-dot dot-quant"></span></div>
+				<div class="tl-body prose">
+					<h4 class="tl-title">Quantum Software Developer II</h4>
+					<p class="tl-org">Xanadu Quantum Technologies, Toronto, ON, Canada</p>
+					<div class="tags"><span class="tag tag-quantum">Quantum</span><span class="tag tag-hpc">HPC</span></div>
+					<ul class="bullets">
+						<li>Contributed to a multi-year effort to capture the entire <a href="https://pennylane.ai/" target="_blank" rel="noopener noreferrer">PennyLane</a> workflow into the <a href="https://jax.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">JAX</a> computational graph for JIT quantum compilation, accelerating quantum machine learning pipelines. Prototyped a Python compiler based on MLIR to apply quantum transforms as compilation passes.</li>
+						<li>Developed <a href="https://docs.pennylane.ai/en/stable/code/api/pennylane.devices.default_tensor.DefaultTensor.html" target="_blank" rel="noopener noreferrer">DefaultTensor</a>, a PennyLane quantum device based on tensor network simulations, enabling the simulation of quantum circuits with thousands of gates. The <a href="https://pennylane.ai/qml/demos/tutorial_How_to_simulate_quantum_circuits_with_tensor_networks/" target="_blank" rel="noopener noreferrer">public tutorial</a> is available on the PennyLane website.</li>
+						<li>Core team release manager for <a href="https://github.com/PennyLaneAI/pennylane/releases/tag/v0.41.0" target="_blank" rel="noopener noreferrer">PennyLane 0.41</a> and <a href="https://github.com/PennyLaneAI/pennylane/releases/tag/v0.40.0" target="_blank" rel="noopener noreferrer">PennyLane 0.40</a>, and several PennyLane plugins. Mentored Ph.D. residents during onboarding. Wrote documentation, tutorials, and guides for users.</li>
+						<li>Core contributor (300+ commits) to <a href="https://pennylane.ai/" target="_blank" rel="noopener noreferrer">PennyLane</a>, a leading open-source Python/C++ framework for quantum machine learning with 3000+ GitHub stars and 800+ forks.</li>
+					</ul>
+				</div>
+			</li>
+			<li class="tl-item reveal">
+				<div class="tl-when"><p class="tl-date">Jan 2025 – Jul 2025</p></div>
+				<div class="tl-rail"><span class="tl-dot dot-phys"></span></div>
+				<div class="tl-body prose">
+					<h4 class="tl-title">Scientific translator</h4>
+					<p class="tl-org">Giangiacomo Feltrinelli Editore, Milano, Italy</p>
+					<div class="tags"><span class="tag tag-physics">Physics</span></div>
+					<ul class="bullets">
+						<li>Adapter and Italian translator for <a href="https://www.amazon.it/Covariant-Loop-Quantum-Gravity-Introduction/dp/1107069629" target="_blank" rel="noopener noreferrer">Covariant Loop Quantum Gravity: An Elementary Introduction to Quantum Gravity and Spinfoam Theory</a>, written by <em>Carlo Rovelli</em> and <em>Francesca Vidotto</em>. The Italian version is <a href="https://www.amazon.it/Gravit%C3%A0-quantistica-loop-Carlo-Rovelli/dp/8850339364" target="_blank" rel="noopener noreferrer">Gravità quantistica a loop</a>.</li>
+					</ul>
+				</div>
+			</li>
+			<li class="tl-item reveal">
+				<div class="tl-when"><p class="tl-date">Sep 2020 – Dec 2023</p></div>
+				<div class="tl-rail"><span class="tl-dot dot-hpc"></span></div>
+				<div class="tl-body prose">
+					<h4 class="tl-title">Researcher and Teaching assistant</h4>
+					<p class="tl-org">Western University, London, ON, Canada</p>
+					<div class="tags"><span class="tag tag-physics">Physics</span><span class="tag tag-hpc">HPC</span></div>
+					<ul class="bullets">
+						<li>Conducted scientific research with the backing of the Natural Science and Engineering Council of Canada.</li>
+						<li>Integrated high-performance computing into loop quantum gravity research. Published original contributions in peer-reviewed journals, also as a first and solo author.</li>
+						<li>Teaching assistant for engineering students in Calculus I, Calculus II, and Numerical Methods courses.</li>
+					</ul>
+				</div>
+			</li>
+			<li class="tl-item reveal">
+				<div class="tl-when"><p class="tl-date">Jun 2020 – Feb 2021</p></div>
+				<div class="tl-rail"><span class="tl-dot dot-phys"></span></div>
+				<div class="tl-body prose">
+					<h4 class="tl-title">Scientific translator</h4>
+					<p class="tl-org">Adelphi Edizioni, Milano, Italy</p>
+					<div class="tags"><span class="tag tag-physics">Physics</span></div>
+					<ul class="bullets">
+						<li>Adapter and Italian translator for <a href="https://www.amazon.ca/General-Relativity-Essentials-Carlo-Rovelli/dp/1009013696" target="_blank" rel="noopener noreferrer">General Relativity: The Essentials</a>, written by <em>Carlo Rovelli</em>. The Italian version is <a href="https://www.amazon.ca/Relativit%C3%A0-introduzione-concettuale-gravitazionali-quantistica/dp/8845936082" target="_blank" rel="noopener noreferrer">Relatività generale. Una semplice introduzione</a>.</li>
+					</ul>
+				</div>
+			</li>
+			<li class="tl-item reveal">
+				<div class="tl-when"><p class="tl-date">Jun 2012 – Aug 2012</p></div>
+				<div class="tl-rail"><span class="tl-dot"></span></div>
+				<div class="tl-body prose">
+					<h4 class="tl-title">Lifeguard</h4>
+					<p class="tl-org">New Kalos, Rimini, Italy</p>
+					<ul class="bullets">
+						<li>Lifeguard in a swimming pool during summertime in Rimini, Italy. Seasonal work during the formative years.</li>
+					</ul>
+				</div>
+			</li>
+		</ol>
+
+		<div class="grid-2 cards-after">
+			<article class="card prose reveal">
+				<h3 class="card-title">Other relevant open-source work</h3>
+				<p class="card-text">Official co-maintainer of <a href="https://github.com/fmilthaler/FinQuant" target="_blank" rel="noopener noreferrer">FinQuant</a>, a large open-source Python project for financial portfolio analysis with 1.8K+ GitHub stars and 200+ forks. FinQuant can analyse asset opportunities, optimise portfolio allocations, and support informed investment decisions, improving potential returns and risk management.</p>
+			</article>
+			<article class="card prose reveal">
+				<h3 class="card-title">Volunteering</h3>
+				<ul class="rows rows-text">
+					<li>Referee for <a href="https://journals.aps.org/prd/" target="_blank" rel="noopener noreferrer">Physical Review D</a> journal (American Physical Society).</li>
+					<li>Referee for <a href="https://iopscience.iop.org/journal/0264-9381/" target="_blank" rel="noopener noreferrer">Classical and Quantum Gravity</a> journal (IOPscience).</li>
+					<li>Volunteered for three months in the UK between Dec 2019 and Feb 2020. Spent time in a vibrant community college in the picturesque South Oxfordshire countryside, called <a href="https://www.braziers.org.uk/" target="_blank" rel="noopener noreferrer">Braziers Park</a>.</li>
+				</ul>
+			</article>
+		</div>
+	</section>
+
+	<!-- 03 Education -->
+	<section class="section wrap" id="education">
+		<div class="section-head">
+			<div>
+				<p class="section-num">03</p>
+				<h2 class="section-title">Education</h2>
+			</div>
+			<figure class="quote">
+				<span class="quote-mark" aria-hidden="true">“</span>
+				<blockquote>If I were again beginning my studies, I would follow the advice of Plato and start with mathematics</blockquote>
+				<figcaption>Galileo Galilei</figcaption>
+			</figure>
+		</div>
+
+		<h3 class="sub">Academic degrees</h3>
+		<ol class="tl">
+			<li class="tl-item reveal">
+				<div class="tl-when"><p class="tl-date">Sep 2020 – Dec 2023</p><p class="tl-note">4-year program</p></div>
+				<div class="tl-rail"><span class="tl-dot dot-hpc"></span></div>
+				<div class="tl-body prose">
+					<h4 class="tl-title">Ph.D. in Physics with Scientific Computing Specialization</h4>
+					<p class="tl-org">Western University, Ontario, Canada</p>
+					<ul class="bullets">
+						<li>Thesis: <a href="https://ir.lib.uwo.ca/etd/9815/" target="_blank" rel="noopener noreferrer">High-performance computing in covariant Loop Quantum Gravity</a></li>
+						<li>Original contributions: 7 publications in peer-reviewed scientific journals and 2 pre-prints</li>
+					</ul>
+				</div>
+			</li>
+			<li class="tl-item reveal">
+				<div class="tl-when"><p class="tl-date">Sep 2017 – Oct 2019</p><p class="tl-note">2-year program</p></div>
+				<div class="tl-rail"><span class="tl-dot dot-phys"></span></div>
+				<div class="tl-body prose">
+					<h4 class="tl-title">Master of Science in Theoretical Physics</h4>
+					<p class="tl-org">University of Bologna, Italy</p>
+					<ul class="bullets">
+						<li>Thesis: <a href="https://amslaurea.unibo.it/19296/" target="_blank" rel="noopener noreferrer">Canonical formalism for compact sources</a></li>
+						<li>Final grade: 110/110 cum Laude (with honors)</li>
+					</ul>
+				</div>
+			</li>
+			<li class="tl-item reveal">
+				<div class="tl-when"><p class="tl-date">Sep 2014 – Sep 2017</p><p class="tl-note">3-year program</p></div>
+				<div class="tl-rail"><span class="tl-dot dot-phys"></span></div>
+				<div class="tl-body prose">
+					<h4 class="tl-title">Bachelor of Science in Physics</h4>
+					<p class="tl-org">University of Bologna, Italy</p>
+					<ul class="bullets">
+						<li>Thesis: <a href="https://amslaurea.unibo.it/14080/" target="_blank" rel="noopener noreferrer">Teoria classica dei campi</a></li>
+						<li>Final grade: 110/110</li>
+					</ul>
+				</div>
+			</li>
+			<li class="tl-item reveal">
+				<div class="tl-when"><p class="tl-date">Sep 2009 – Sep 2014</p><p class="tl-note">5-year program</p></div>
+				<div class="tl-rail"><span class="tl-dot dot-phys"></span></div>
+				<div class="tl-body prose">
+					<h4 class="tl-title">High School diploma</h4>
+					<p class="tl-org">Liceo Scientifico "A. Einstein", Rimini, Italy</p>
+					<ul class="bullets">
+						<li>Thesis: Introduzione alla meccanica quantistica</li>
+					</ul>
+				</div>
+			</li>
+		</ol>
+
+		<h3 class="sub">Summer schools</h3>
+		<div class="grid-3">
+			<article class="card card-sm school prose reveal">
+				<div class="school-top"><span class="school-date">Aug 2026</span><span class="tags tags-inline"><span class="tag tag-hpc">HPC</span><span class="tag tag-quantum">Quantum</span></span></div>
+				<h4 class="school-title"><a href="https://mlir-school.github.io/summer-2026/" target="_blank" rel="noopener noreferrer">ACM Europe School on MLIR 2026</a></h4>
+				<p class="school-place">A Coruña, Spain</p>
+				<p class="school-text">Week-long school on MLIR, the multi-level compiler infrastructure behind modern domain specific compilers.</p>
+				<a class="school-cert" href="https://drive.google.com/file/d/1ws3hHxBJxEvR8n3vXgJqeAuXhAxgIlnW/view" target="_blank" rel="noopener noreferrer">Certificate of attendance</a>
+			</article>
+			<article class="card card-sm school prose reveal">
+				<div class="school-top"><span class="school-date">Jun 2023</span><span class="tags tags-inline"><span class="tag tag-quantum">Quantum</span></span></div>
+				<h4 class="school-title">Introduction to Quantum Computing School</h4>
+				<p class="school-place">CINECA, Bologna, Italy</p>
+				<p class="school-text">Selected among the 25 best applicants. Fully scholarship-funded travel and expenses. Courses: Qiskit, NISQ algorithms, quantum annealers, Pulser, tensor networks, and quantum simulators.</p>
+				<a class="school-cert" href="https://drive.google.com/file/d/1ZdHp44HyKpLRzs99x3jHxjX73CUE9ZYB/view" target="_blank" rel="noopener noreferrer">Certificate of attendance</a>
+			</article>
+			<article class="card card-sm school prose reveal">
+				<div class="school-top"><span class="school-date">Jun 2023</span><span class="tags tags-inline"><span class="tag tag-hpc">HPC</span></span></div>
+				<h4 class="school-title">2023 Compute Ontario Summer School for Advanced Research Computing</h4>
+				<p class="school-place">Compute Canada, Canada</p>
+				<p class="school-text">Courses: Modern C++ Parallel Programming, OOP and C++ Exception Handling, HPC in Python, Text mining.</p>
+				<a class="school-cert" href="https://drive.google.com/file/d/1bpQfnX7YNEgXQuNINc1CkvDuGV6d059b/view" target="_blank" rel="noopener noreferrer">Certificates of attendance</a>
+			</article>
+			<article class="card card-sm school prose reveal">
+				<div class="school-top"><span class="school-date">Jun 2022</span><span class="tags tags-inline"><span class="tag tag-physics">Physics</span></span></div>
+				<h4 class="school-title">2022 Loops Summer School</h4>
+				<p class="school-place">CPT, Marseille, France</p>
+				<p class="school-text">Annual summer school on Loop Quantum Gravity.</p>
+			</article>
+			<article class="card card-sm school prose reveal">
+				<div class="school-top"><span class="school-date">Jun 2022</span><span class="tags tags-inline"><span class="tag tag-hpc">HPC</span></span></div>
+				<h4 class="school-title">2022 Compute Ontario Summer School for Advanced Research Computing</h4>
+				<p class="school-place">Compute Canada, Canada</p>
+				<p class="school-text">Courses: Machine Learning, Git.</p>
+				<a class="school-cert" href="https://drive.google.com/file/d/1jFOaKSLIHcm6iq3rYDUhhUBhtuxvsCK6/view" target="_blank" rel="noopener noreferrer">Certificates of attendance</a>
+			</article>
+			<article class="card card-sm school prose reveal">
+				<div class="school-top"><span class="school-date">Jun 2021</span><span class="tags tags-inline"><span class="tag tag-hpc">HPC</span></span></div>
+				<h4 class="school-title">2021 SHARCNET HPC Summer School</h4>
+				<p class="school-place">Sharcnet, Canada</p>
+				<p class="school-text">Courses: Parallel Programming with MPI, CUDA, Parallel Debugging and Profiling.</p>
+				<a class="school-cert" href="https://drive.google.com/file/d/12lvEFBqh5XVGnP5haDOJ_eli5X0PKvna/view" target="_blank" rel="noopener noreferrer">Certificates of attendance</a>
+			</article>
+			<article class="card card-sm school prose reveal">
+				<div class="school-top"><span class="school-date">Jun 2021</span><span class="tags tags-inline"><span class="tag tag-physics">Physics</span></span></div>
+				<h4 class="school-title">2021 Loop Quantum Gravity Online Summer School</h4>
+				<p class="school-place">CPT, Marseille, France</p>
+				<p class="school-text">Annual summer school on Loop Quantum Gravity.</p>
+			</article>
+		</div>
+
+		<div class="grid-cert">
+			<div>
+				<h3 class="sub">Licenses and certifications</h3>
+				<ul class="rows split prose">
+					<li><span class="row-title">Azure Databricks &amp; Spark For Data Engineers (PySpark / SQL)</span><p class="row-meta">Udemy · Aug 2023</p></li>
+					<li><span class="row-title">CUDA programming Masterclass with C++</span><p class="row-meta">Udemy · Jul 2023</p></li>
+					<li><span class="row-title">Quantitative Finance and Algorithmic Trading in Python</span><p class="row-meta">Udemy · Jun 2023</p></li>
+					<li><span class="row-title">Update to Modern C++</span><p class="row-meta">Udemy · Mar 2023</p></li>
+					<li><span class="row-title">Mastering Data Structures and Algorithms using C and C++</span><p class="row-meta">Udemy · Feb 2023</p></li>
+					<li><a class="row-title" href="https://coursera.org/share/a79bd44e2d030512411425611eeaa06f" target="_blank" rel="noopener noreferrer">Introduction to TensorFlow for AI, Machine Learning, and Deep Learning</a><p class="row-meta">Coursera · Jan 2023</p></li>
+					<li><a class="row-title" href="https://coursera.org/share/923d98b12574a862f990f05d815f5e95" target="_blank" rel="noopener noreferrer">Machine Learning specialization</a><p class="row-meta">Coursera · Dec 2022</p></li>
+				</ul>
+			</div>
+			<div>
+				<h3 class="sub">Music</h3>
+				<ul class="rows">
+					<li><span class="row-title"><em>Advanced level certification in modern guitar (grade 100/100)</em></span><p class="row-meta">Modern Music Institute, Riccione, Italy · Sep 2013</p></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<!-- 04 Teaching & Outreach -->
+	<section class="section wrap" id="teaching">
+		<div class="section-head">
+			<div>
+				<p class="section-num">04</p>
+				<h2 class="section-title">Teaching &amp; Outreach</h2>
+			</div>
+			<figure class="quote">
+				<span class="quote-mark" aria-hidden="true">“</span>
+				<blockquote>A method is more important than a discovery, since the right method will lead to new and even more important discoveries</blockquote>
+				<figcaption>Lev Landau</figcaption>
+			</figure>
+		</div>
+
+		<div class="grid-3 cards-first">
+			<article class="card prose reveal">
+				<h3 class="card-title">Courses</h3>
+				<ul class="rows">
+					<li><a class="row-title" href="https://www.udemy.com/course/introduction-to-modern-python-programming/" target="_blank" rel="noopener noreferrer">Introduction to Modern Python Programming</a><p class="row-meta">Video course published on Udemy</p></li>
+					<li><a class="row-title" href="https://www.udemy.com/course/introduction-to-jax-jit-autodiff-and-the-compiler-stack/" target="_blank" rel="noopener noreferrer">Introduction to JAX: JIT, Autodiff and the Compiler Stack</a><p class="row-meta">Video course published on Udemy</p></li>
+					<li><span class="row-title"><em>Parallel Programming in Modern Python</em></span><p class="row-meta">Working title · upcoming video course on Udemy</p></li>
+				</ul>
+			</article>
+			<article class="card prose reveal">
+				<h3 class="card-title">Guides and notebooks</h3>
+				<ul class="rows">
+					<li><a class="row-title" href="https://qrisp.eu/general/tutorial/BigInteger.html" target="_blank" rel="noopener noreferrer">Using BigInteger to compile Shor’s algorithm at 2048 bit</a><p class="row-meta">Demo in the Qrisp documentation</p></li>
+					<li><a class="row-title" href="https://www.iqmacademy.com/notebookViewer/?path=%2Fnotebooks%2Fiqm%2Fcrystal%2FMaxCut_QAOA_Qrisp.ipynb" target="_blank" rel="noopener noreferrer">Solving the MaxCut problem with QAOA using Qrisp</a><p class="row-meta">Hands-on notebook on the IQM Academy, running on IQM quantum hardware</p></li>
+					<li><a class="row-title" href="https://pennylane.ai/qml/demos/tutorial_How_to_simulate_quantum_circuits_with_tensor_networks/" target="_blank" rel="noopener noreferrer">How to simulate quantum circuits with tensor networks</a><p class="row-meta">Published on the PennyLane website</p></li>
+				</ul>
+			</article>
+			<article class="card prose reveal">
+				<h3 class="card-title">Teaching</h3>
+				<ul class="rows">
+					<li><span class="row-title">Teaching assistant for engineering students in Calculus I, Calculus II, and Numerical Methods courses.</span><p class="row-meta">Western University, London, ON, Canada · Sep 2020 – Dec 2023</p></li>
+					<li><span class="row-title">Mentored Ph.D. residents during onboarding, and wrote documentation, tutorials, and guides for users of the framework.</span><p class="row-meta">Xanadu Quantum Technologies, Toronto, ON, Canada · Feb 2024 – Oct 2025</p></li>
+				</ul>
+			</article>
+		</div>
+		<article class="card prose reveal card-wide">
+			<h3 class="card-title">Conference talks and tutorials</h3>
+			<ul class="rows split">
+				<li><a class="row-title" href="https://github.com/PietropaoloFrisoni/QrispDynamicProgramming" target="_blank" rel="noopener noreferrer">Introduction to Jasp</a><p class="row-meta">Workshop · <a href="https://www.fokus.fraunhofer.de/en/sqc/events/eclipse_qrisp_community_day.html" target="_blank" rel="noopener noreferrer">Eclipse Qrisp Community Day 2026</a>, Fraunhofer FOKUS, Berlin · Oct 2026</p></li>
+				<li><a class="row-title" href="https://quantum-compilers.github.io/iwqc2026/" target="_blank" rel="noopener noreferrer">Exact Gate Counts and QIR Generation for Shor's Algorithm at 2048 Bits</a><p class="row-meta">Poster presentation · 8th International Workshop on Quantum Compilation (IWQC), Toronto, ON, Canada · Sep 2026</p><p class="row-meta">R. Seidel, P. Frisoni, E. Kuehnke, D. Ittah, J. Izaac, D. Polimeni, and R. Zander</p></li>
+				<li><span class="row-title"><em>Eclipse Qrisp: High-Level Quantum Programming for Dynamic Algorithms</em></span><p class="row-meta">Tutorial on dynamic quantum computing · <a href="https://qce.quantum.ieee.org/2026/" target="_blank" rel="noopener noreferrer">IEEE Quantum Week 2026 (QCE26)</a>, Toronto, ON, Canada · Sep 2026</p></li>
+				<li><span class="row-title"><em>Recent advances in numerical LQG</em></span><p class="row-meta">LOOPS 2022, École normale supérieure in Lyon, France · Jul 2022</p></li>
+				<li><a class="row-title" href="https://www.koushare.com/video/videodetail/30383" target="_blank" rel="noopener noreferrer"><em>Recent advances in numerical LQG</em></a><p class="row-meta">23rd international conference on GR and gravitation (GR23), Beijing, China · Jul 2022</p></li>
+				<li><span class="row-title"><em>Numerical techniques in covariant LQG</em></span><p class="row-meta">16th Marcel Grossmann Meeting, Remote · Jul 2021</p></li>
+			</ul>
+		</article>
+	</section>
+
+	<!-- 05 Publications. To add a paper, copy one <li class="pub"> and edit it; data-tags takes any of: physics hpc quantum. -->
+	<section class="section wrap" id="publications">
+		<div class="section-head">
+			<div>
+				<p class="section-num">05</p>
+				<h2 class="section-title">Publications</h2>
+			</div>
+			<figure class="quote">
+				<span class="quote-mark" aria-hidden="true">“</span>
+				<blockquote>Science is built up of facts, as a house is built of bricks, but an accumulation of facts is no more a science than a heap of bricks is a house</blockquote>
+				<figcaption>Henri Poincaré</figcaption>
+			</figure>
+		</div>
+
+		<h3 class="sub">Scientific papers</h3>
+		<div class="pub-tools">
+			<div class="chips" role="group" aria-label="Filter publications by field">
+				<button type="button" class="chip is-on" data-filter="all" aria-pressed="true">All <span class="chip-n"></span></button>
+				<button type="button" class="chip chip-physics" data-filter="physics" aria-pressed="false">Theoretical physics <span class="chip-n"></span></button>
+				<button type="button" class="chip chip-hpc" data-filter="hpc" aria-pressed="false">HPC <span class="chip-n"></span></button>
+				<button type="button" class="chip chip-quantum" data-filter="quantum" aria-pressed="false">Quantum computing <span class="chip-n"></span></button>
+			</div>
+			<p class="pub-count" data-pub-count aria-live="polite"></p>
+		</div>
+		<ol class="pubs">
+			<li class="pub fade" data-tags="quantum">
+				<span class="pub-year">2026</span>
+				<div class="pub-body">
+					<a class="pub-title" href="https://arxiv.org/abs/2606.23934" target="_blank" rel="noopener noreferrer">Augmenting Imaginary-Time Evolution with Local Geometric Information</a>
+					<p class="pub-authors">C. L. Benavides-Riveros, P. Sharma, P. Frisoni, F. Šimkovic IV</p>
+					<div class="pub-meta"><span class="pub-venue">Nature Communications</span><span class="badge">Accepted</span><span class="tag tag-quantum">Quantum computing</span></div>
+				</div>
+			</li>
+			<li class="pub fade" data-tags="quantum hpc">
+				<span class="pub-year">2026</span>
+				<div class="pub-body">
+					<span class="pub-title">Exact Gate Counts and QIR Generation for Shor's Algorithm at 2048 Bits</span>
+					<p class="pub-authors">R. Seidel, E. J. Kuehnke, D. Ittah, J. Izaac, D. Polimeni, R. Zander, P. Frisoni</p>
+					<div class="pub-meta"><span class="pub-venue">In preparation</span><span class="badge">To be submitted</span><span class="tag tag-quantum">Quantum computing</span><span class="tag tag-hpc">HPC</span></div>
+				</div>
+			</li>
+			<li class="pub fade" data-tags="physics hpc">
+				<span class="pub-year">2025</span>
+				<div class="pub-body">
+					<a class="pub-title" href="https://journals.aps.org/prd/abstract/10.1103/pvqh-3t24" target="_blank" rel="noopener noreferrer">Generative flow networks in covariant loop quantum gravity</a>
+					<p class="pub-authors">J. Bunao, P. Frisoni, A. Kogios, J. Wogan</p>
+					<div class="pub-meta"><span class="pub-venue">Physical Review D 112, 086001</span><span class="tag tag-physics">Theoretical physics</span><span class="tag tag-hpc">HPC</span></div>
+				</div>
+			</li>
+			<li class="pub fade" data-tags="physics hpc">
+				<span class="pub-year">2023</span>
+				<div class="pub-body">
+					<a class="pub-title" href="https://arxiv.org/abs/2312.02399" target="_blank" rel="noopener noreferrer">Primordial fluctuations from quantum gravity: 16-cell topological model</a>
+					<p class="pub-authors">P. Frisoni, F. Gozzini, F. Vidotto</p>
+					<div class="pub-meta"><span class="pub-venue">arXiv:2312.02399</span><span class="badge">Preprint</span><span class="tag tag-physics">Theoretical physics</span><span class="tag tag-hpc">HPC</span></div>
+				</div>
+			</li>
+			<li class="pub fade" data-tags="physics hpc">
+				<span class="pub-year">2023</span>
+				<div class="pub-body">
+					<a class="pub-title" href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.107.126012" target="_blank" rel="noopener noreferrer">Numerical approach to the black-to-white hole transition</a>
+					<p class="pub-authors">P. Frisoni</p>
+					<div class="pub-meta"><span class="pub-venue">Physical Review D 107, 126012</span><span class="tag tag-physics">Theoretical physics</span><span class="tag tag-hpc">HPC</span></div>
+				</div>
+			</li>
+			<li class="pub fade" data-tags="physics">
+				<span class="pub-year">2023</span>
+				<div class="pub-body">
+					<a class="pub-title" href="https://arxiv.org/abs/2305.12215" target="_blank" rel="noopener noreferrer">Introduction to Loop Quantum Gravity: Rovelli's lectures on LQG</a>
+					<p class="pub-authors">P. Frisoni</p>
+					<div class="pub-meta"><span class="pub-venue">arXiv:2305.12215</span><span class="badge">Preprint</span><span class="tag tag-physics">Theoretical physics</span></div>
+				</div>
+			</li>
+			<li class="pub fade" data-tags="physics hpc">
+				<span class="pub-year">2023</span>
+				<div class="pub-body">
+					<a class="pub-title" href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.107.106008" target="_blank" rel="noopener noreferrer">Summing bulk quantum numbers with Monte Carlo in spin foam theories</a>
+					<p class="pub-authors">P. Dona, P. Frisoni</p>
+					<div class="pub-meta"><span class="pub-venue">Physical Review D 107, 106008</span><span class="tag tag-physics">Theoretical physics</span><span class="tag tag-hpc">HPC</span></div>
+				</div>
+			</li>
+			<li class="pub fade" data-tags="physics hpc">
+				<span class="pub-year">2023</span>
+				<div class="pub-body">
+					<a class="pub-title" href="https://iopscience.iop.org/article/10.1088/1361-6382/acc5d6" target="_blank" rel="noopener noreferrer">Markov chain Monte Carlo methods for graph refinement in spinfoam cosmology</a>
+					<p class="pub-authors">P. Frisoni, F. Gozzini, F. Vidotto</p>
+					<div class="pub-meta"><span class="pub-venue">Classical and Quantum Gravity 40, 105001</span><span class="tag tag-physics">Theoretical physics</span><span class="tag tag-hpc">HPC</span></div>
+				</div>
+			</li>
+			<li class="pub fade" data-tags="physics">
+				<span class="pub-year">2023</span>
+				<div class="pub-body">
+					<a class="pub-title" href="https://www.worldscientific.com/doi/10.1142/9789811269776_0336" target="_blank" rel="noopener noreferrer">Studying the EPRL spinfoam self-energy</a>
+					<p class="pub-authors">P. Frisoni</p>
+					<div class="pub-meta"><span class="pub-venue">The Sixteenth Marcel Grossmann Meeting</span><span class="tag tag-physics">Theoretical physics</span></div>
+				</div>
+			</li>
+			<li class="pub fade" data-tags="physics hpc">
+				<span class="pub-year">2022</span>
+				<div class="pub-body">
+					<a class="pub-title" href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.106.066022" target="_blank" rel="noopener noreferrer">Radiative corrections to the Lorentzian Engle-Pereira-Rovelli-Livine spin foam propagator</a>
+					<p class="pub-authors">P. Dona, P. Frisoni, E. Wilson-Ewing</p>
+					<div class="pub-meta"><span class="pub-venue">Physical Review D 106, 066022</span><span class="tag tag-physics">Theoretical physics</span><span class="tag tag-hpc">HPC</span></div>
+				</div>
+			</li>
+			<li class="pub fade" data-tags="physics hpc">
+				<span class="pub-year">2022</span>
+				<div class="pub-body">
+					<a class="pub-title" href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.105.106018" target="_blank" rel="noopener noreferrer">Numerical analysis of the self-energy in covariant loop quantum gravity</a>
+					<p class="pub-authors">P. Frisoni, F. Gozzini, F. Vidotto</p>
+					<div class="pub-meta"><span class="pub-venue">Physical Review D 105, 106018</span><span class="tag tag-physics">Theoretical physics</span><span class="tag tag-hpc">HPC</span></div>
+				</div>
+			</li>
+			<li class="pub fade" data-tags="physics hpc">
+				<span class="pub-year">2022</span>
+				<div class="pub-body">
+					<a class="pub-title" href="https://www.mdpi.com/2218-1997/8/4/208" target="_blank" rel="noopener noreferrer">How-to Compute EPRL Spin Foam Amplitudes</a>
+					<p class="pub-authors">P. Dona, P. Frisoni</p>
+					<div class="pub-meta"><span class="pub-venue">Universe 8, 208</span><span class="tag tag-physics">Theoretical physics</span><span class="tag tag-hpc">HPC</span></div>
+				</div>
+			</li>
+		</ol>
+
+		<div class="grid-2 cards-after">
+			<article class="card prose reveal">
+				<h3 class="card-title">Posters</h3>
+				<ul class="rows">
+					<li><a class="row-title" href="https://quantum-compilers.github.io/iwqc2026/" target="_blank" rel="noopener noreferrer">Exact Gate Counts and QIR Generation for Shor's Algorithm at 2048 Bits</a><p class="row-meta">R. Seidel, P. Frisoni, E. Kuehnke, D. Ittah, J. Izaac, D. Polimeni, and R. Zander</p><p class="row-meta">8th International Workshop on Quantum Compilation (IWQC), poster presentation · Sep 2026</p></li>
+				</ul>
+			</article>
+			<article class="card prose reveal">
+				<h3 class="card-title">Books</h3>
+				<ul class="rows">
+					<li><a class="row-title" href="https://www.amazon.it/Gravit%C3%A0-quantistica-loop-Carlo-Rovelli/dp/8850339364" target="_blank" rel="noopener noreferrer">Gravità quantistica a loop</a><p class="row-meta">Adapter and Italian translator for <a href="https://www.amazon.it/Covariant-Loop-Quantum-Gravity-Introduction/dp/1107069629" target="_blank" rel="noopener noreferrer">Covariant Loop Quantum Gravity: An Elementary Introduction to Quantum Gravity and Spinfoam Theory</a>, written by Carlo Rovelli and Francesca Vidotto · Giangiacomo Feltrinelli Editore, 2025</p></li>
+					<li><a class="row-title" href="https://www.amazon.ca/Relativit%C3%A0-introduzione-concettuale-gravitazionali-quantistica/dp/8845936082" target="_blank" rel="noopener noreferrer">Relatività generale. Una semplice introduzione</a><p class="row-meta">Adapter and Italian translator for <a href="https://www.amazon.ca/General-Relativity-Essentials-Carlo-Rovelli/dp/1009013696" target="_blank" rel="noopener noreferrer">General Relativity: The Essentials</a>, written by Carlo Rovelli</p></li>
+				</ul>
+			</article>
+		</div>
+	</section>
+</main>

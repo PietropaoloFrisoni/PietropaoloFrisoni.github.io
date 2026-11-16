@@ -8,7 +8,3 @@ _config.yml
 
 # Jekyll build output
 _site/
-
-# Vendored third-party assets
-assets/js/
-assets/css/

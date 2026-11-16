@@ -11,47 +11,35 @@ baseurl: ""
 lang: en
 
 # Shown when a page is shared on LinkedIn, Slack, etc.
-og_image: /images/LifeRoad.jpg
+og_image: /images/profile-code.jpg
 
-# The main navigation. `id` is matched against each page's `nav_id` front
-# matter to mark the current item.
+# The main navigation. The whole site is one page, so each link jumps to a section of it.
 nav:
-  - id: about
-    title: About Me
-    url: /
-  - id: education
-    title: Education
-    url: /education.html
-  - id: experience
-    title: Experience
-    url: /experience.html
-  - id: teaching
-    title: Teaching & Outreach
-    url: /teaching.html
-  - id: publications
-    title: Publications
-    url: /publications.html
+  - title: About
+    url: /#about
+  - title: Experience
+    url: /#experience
+  - title: Education
+    url: /#education
+  - title: Teaching & Outreach
+    url: /#teaching
+  - title: Publications
+    url: /#publications
 
-# Rendered in both the nav and the footer.
+# The buttons in the footer.
 social:
   - name: LinkedIn
     url: https://www.linkedin.com/in/pietropaolo-frisoni-757b3b217/
-    icon: brands fa-linkedin-in
   - name: GitHub
     url: https://github.com/PietropaoloFrisoni
-    icon: brands fa-github
   - name: INSPIRE-HEP
     url: https://inspirehep.net/authors/2122225
-    icon: solid fa-graduation-cap
 
-# The quote in the small bar at the very bottom of every page, next to the
-# name. Delete this line and the matching one in _includes/copyright.html to
-# drop it entirely.
-footer_quote: >-
-  "What we know is a drop, what we don't know is an ocean" - Isaac Newton
+# The quote in the bar at the very bottom of every page.
+footer_quote: What we know is a drop, what we don't know is an ocean
+footer_quote_author: Isaac Newton
 
 exclude:
   - README.md
-  - LICENSE.txt
   - .claude
   - .prettierignore
