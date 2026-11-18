@@ -233,7 +233,10 @@ a:hover { color: var(--quant); }
 .hero {
 	position: relative;
 	overflow: hidden;
+	/* The opening screen fills the browser window; the sections start below it. */
 	min-height: 640px;
+	min-height: max(640px, 100vh);
+	min-height: max(640px, 100svh);
 	display: flex;
 	flex-direction: column;
 	border-bottom: 1px solid var(--border);
@@ -593,6 +596,19 @@ a.row-title { text-decoration: none; }
 	.grid-cert { grid-template-columns: minmax(0, 1fr); }
 }
 
+/* ---------- Short laptop windows: a tighter opening screen, so it fits without scrolling ---------- */
+
+@media (min-width: 961px) and (max-height: 820px) {
+	.hero-body { padding-top: 8px; padding-bottom: 60px; }
+	.avatar { width: 96px; height: 96px; }
+	.hero-name { font-size: clamp(40px, 4.4vw, 56px); }
+	.hero-intro { margin: 16px 0 4px; font-size: 18px; }
+	.lens-btn { min-height: 44px; }
+	.lens-label { font-size: 26px; }
+	.lens-caption { min-height: 72px; margin-top: 8px; }
+	.hero .actions { margin-top: 16px; }
+}
+
 /* ---------- Phones ---------- */
 
 @media (max-width: 720px) {
@@ -601,7 +617,6 @@ a.row-title { text-decoration: none; }
 	.wrap { padding-left: 20px; padding-right: 20px; }
 	.nav-links { margin: 0 -20px; padding: 0 20px; }
 
-	.hero { min-height: 0; }
 	.hero-body { padding-top: 8px; padding-bottom: 92px; }
 	.identity { gap: 14px 16px; }
 	.avatar { width: 72px; height: 72px; border-width: 2px; box-shadow: 0 0 0 5px color-mix(in srgb, var(--phys) 18%, transparent); }
