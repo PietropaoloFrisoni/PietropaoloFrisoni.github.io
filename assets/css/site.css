@@ -406,6 +406,7 @@ a:hover { color: var(--quant); }
 .tl-dot.dot-hpc { border-color: var(--hpc); }
 .tl-dot.dot-quant { border-color: var(--quant); }
 .tl-dot.is-filled { background: var(--quant); }
+.tl-dot.dot-hpc.is-filled { background: var(--hpc); }
 
 /* Long bullet lines get hard to read, so on wide screens the text keeps a comfortable width. */
 .tl-body { min-width: 0; max-width: 980px; }
